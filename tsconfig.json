@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES2019",
+    "module": "commonjs",
+    "outDir": "../dir",
+    "esModuleInterop": true
+  },
+  "exclude": [
+    "src/node_modules",
+    "**/*.spec.ts"
+  ]
+}
