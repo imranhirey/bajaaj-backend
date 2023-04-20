@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 app.use('/auth/clients',require('./routes/auth/clients/signup'))
+app.use('/auth/clients',require('./routes/auth/clients/login'))
+
 app.use('/auth/riders',require('./routes/auth/riders/signup'))
 
 app.listen(3001, () => {

@@ -32,15 +32,23 @@ export interface Client {
     isverified:Boolean
   }
 
-  export interface AppToken{
+  export interface OutToken{
     token:string,
     timecreated:Date,
     revoked:Boolean,
 
   }
-  
-  export interface Clientogin{
+
+  export interface InToken{
     email:string,
+    name:string,
+    id:Number,
+    role:string
+
+  }
+  
+  export interface Clientlogin{
+    emailorphone :string,
     password:string
     devicetype:string
   }

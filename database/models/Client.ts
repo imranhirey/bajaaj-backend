@@ -20,17 +20,7 @@ const saveClient:SaveClient = async (client) => {
     const sql = `INSERT INTO clients SET ?`;
     return new Promise(async(resolve, reject) => {
         await connection.query(sql, clientData, (err, result) => {
-            if (err) {
-                reject(err)
-            }
-            else{
-                if (clientid==result.insertId){
-                    resolve(result)
-                }
-                else{
-                    reject("Error")
-                }
-            }
+            
         })
 
 

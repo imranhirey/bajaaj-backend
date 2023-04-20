@@ -27,12 +27,7 @@ const saveRider:SaveRider = async (Rider) => {
                 reject(err)
             }
             else{
-                if (Riderid==result.insertId){
-                    resolve(result)
-                }
-                else{
-                    reject("Error")
-                }
+                resolve(result)
             }
         })
 
